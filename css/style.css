@@ -428,7 +428,7 @@ html {
 }
 .container-contact-cards .main-contact-card {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 200%;
   transition: 1s;
 }
