@@ -421,6 +421,73 @@ html {
   background-color: #fff;
 }
 
+.container-contact-cards {
+  width: 100%;
+
+  padding: 5px 0;
+}
+.container-contact-cards .main-contact-card {
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-contact-card {
+  margin-left: 100%;
+}
+
+.container-contact-cards .main-contact-card .contact-cards {
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  justify-content: space-between;
+}
+.main-contact-card .contact-cards .card {
+  width: calc(100% / 2 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 0px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-contact-card .contact-cards .card:hover {
+  transform: translateY(-15px);
+}
+.contact-cards .card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-cards .card .content .img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #f4b400;
+  margin-bottom: 14px;
+}
+.card .content .img img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job {
+  font-size: 20px;
+  color: #f4b400;
+}
+.card .content .media-icons {
+  margin-top: 10px;
+  display: flex;
+}
 .card-image {
   position: relative;
   height: 150px;
@@ -437,8 +504,8 @@ html {
 }
 .card-image2 {
   position: relative;
-  height: 200px;
-  width: 300px;
+  height: 100px;
+  width: 200px;
   border-radius: 10%;
   padding: 1px;
 }
@@ -447,6 +514,18 @@ html {
   width: 100%;
   object-fit: cover;
   border-radius: 10%;
+}
+@media (max-width: 768px) {
+  .main-contact-card .contact-cards .card {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-contact-card .contact-cards .card {
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
 }
 
 .slide-content {
