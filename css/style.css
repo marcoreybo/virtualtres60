@@ -429,7 +429,7 @@ html {
 .container-contact-cards .main-contact-card {
   display: flex;
   justify-content: space-between;
-  width: 200%;
+  width: 100%;
   transition: 1s;
 }
 #two:checked ~ .main-contact-card {
