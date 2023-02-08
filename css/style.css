@@ -428,8 +428,8 @@ html {
 }
 .container-contact-cards .main-contact-card {
   display: flex;
-  justify-content: space-between;
-  width: 200%;
+  justify-content: space-evenly;
+  width: 100%;
   transition: 1s;
 }
 #two:checked ~ .main-contact-card {
@@ -437,7 +437,7 @@ html {
 }
 
 .container-contact-cards .main-contact-card .contact-cards {
-  width: calc(100% / 2 - 10px);
+  width: calc(100% / 2);
   display: flex;
   flex-wrap: wrap;
   margin: 0 10px;
@@ -519,7 +519,10 @@ html {
 @media (max-width: 768px) {
   .main-contact-card .contact-cards .card {
     margin: 20px 0 10px 0;
-    width: calc(100% / 2 - 10px);
+    width: calc(100% / 2);
+  }
+  .container-contact-cards .main-contact-card .contact-cards {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
